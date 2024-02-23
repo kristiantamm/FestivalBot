@@ -25,7 +25,7 @@ def fetchRawData(location, checkin, checkout, adults):
     url = "https://airbnb13.p.rapidapi.com/search-location"
     querystring = {"location":location,"checkin": checkin,"checkout":checkout,"adults":str(adults),"children":"0","infants":"0","pets":"0","page":"1","currency":"EUR"}
     headers = {
-        "X-RapidAPI-Key": "f482f0466amsh2d341e928d6e91ap1f1bafjsn581f3fcc8c03",
+        "X-RapidAPI-Key": "API-key",
         "X-RapidAPI-Host": "airbnb13.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
